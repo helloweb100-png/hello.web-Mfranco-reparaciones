@@ -335,64 +335,185 @@
           </div>
         </div>
 
+        <!-- Una tarjeta por servicio (8). Fuente: biografía de Facebook del taller ("pérdida de comunicación
+             entre computadora y módulos, aire acondicionado, fallas check engine, frenos, afinaciones a motores y
+             transmisiones, lavado de inyectores en laboratorio profesional, mecánico en general")
+             + rectificación de motores (ya estaba en la página aprobada por el cliente).
+             Si se agrega o quita un servicio: ajustar también el stat "Especialidades" (#stats),
+             el JSON-LD del <head>, el <select> del formulario y el marquee de js/main.js. -->
         <div class="ambientes-grid">
 
-          <!-- Diagnóstico electrónico -->
-          <div class="amb-card reveal">
+          <!-- 01 · Pérdida de comunicación entre módulos -->
+          <article class="amb-card reveal">
             <img class="amb-img"
-              src="https://images.unsplash.com/photo-1727893380169-4dda123e19f7?q=80&w=1400&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1727893380169-4dda123e19f7?q=75&w=900&auto=format&fit=crop"
               alt="Técnico conectando una laptop de diagnóstico al sistema electrónico de un automóvil"
               loading="lazy" decoding="async">
             <div class="amb-overlay">
-              <div class="amb-icon-wrap"
-                   style="background:rgba(212,169,74,0.16); border-color:rgba(243,220,155,0.45);"
-                   aria-hidden="true">
-                <i class="fa-solid fa-microchip" style="color:#f3dc9b;"></i>
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-network-wired"></i>
               </div>
-              <h3>Diagnóstico Electrónico</h3>
-              <p>Pérdida de comunicación entre computadora y módulos, fallas de check engine y sensores. Encontramos la causa, no solo el síntoma.</p>
-              <div class="amb-temp">Escáner profesional · Modelos 2014 – 2026</div>
+              <h3>Pérdida de comunicación entre módulos</h3>
+              <p>Corregimos fallas de comunicación entre la computadora y los módulos de tu auto.</p>
+              <div class="amb-temp">Escáner profesional</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar pérdida de comunicación entre módulos por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20P%C3%A9rdida%20de%20comunicaci%C3%B3n%20entre%20m%C3%B3dulos.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
             </div>
-          </div>
+          </article>
 
-          <!-- Motor, transmisión e inyectores -->
-          <div class="amb-card reveal d1">
+          <!-- 02 · Aire acondicionado -->
+          <article class="amb-card reveal d1">
             <img class="amb-img"
-              src="https://images.unsplash.com/photo-1663642775693-6628f65358be?q=80&w=1400&auto=format&fit=crop"
-              alt="Motor de automóvil en detalle con alternador y bandas, en revisión para afinación o rectificación"
+              src="https://images.unsplash.com/photo-1775848365860-be55fa16c090?q=75&w=900&auto=format&fit=crop"
+              alt="Salida de aire acondicionado del tablero de un automóvil con borde azul"
               loading="lazy" decoding="async">
             <div class="amb-overlay">
-              <div class="amb-icon-wrap"
-                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
-                   aria-hidden="true">
-                <i class="fa-solid fa-gears" style="color:white;"></i>
+              <div class="amb-icon-wrap is-cool" aria-hidden="true">
+                <i class="fa-solid fa-snowflake"></i>
               </div>
-              <h3>Motor y Transmisión</h3>
-              <p>Afinaciones de motor y transmisión, lavado de inyectores en laboratorio profesional y rectificación: devolvemos la potencia a tu motor.</p>
-              <div class="amb-temp">Afinación · Inyectores · Rectificación</div>
+              <h3>Aire acondicionado</h3>
+              <p>Diagnóstico y reparación del A/C para que tu auto vuelva a enfriar como debe.</p>
+              <div class="amb-temp">Diagnóstico · Reparación</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar aire acondicionado por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20Aire%20acondicionado.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
             </div>
-          </div>
+          </article>
 
-          <!-- Frenos, A/C y mecánica general -->
-          <div class="amb-card reveal d2">
+          <!-- 03 · Fallas de Check Engine -->
+          <article class="amb-card reveal d2">
             <img class="amb-img"
-              src="https://images.unsplash.com/photo-1613214150384-14921ff659b2?q=80&w=1400&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1714683960864-d8b33cb59f38?q=75&w=900&auto=format&fit=crop"
+              alt="Tablero de un automóvil con velocímetro y luces de advertencia encendidas"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <h3>Fallas de Check Engine</h3>
+              <p>Leemos códigos y verificamos sensores para atender la causa real de la luz encendida.</p>
+              <div class="amb-temp">Códigos · Sensores</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar fallas de check engine por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20Fallas%20de%20Check%20Engine.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 04 · Frenos -->
+          <article class="amb-card reveal d3">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1613214150384-14921ff659b2?q=75&w=900&auto=format&fit=crop"
               alt="Disco y caliper de freno de un automóvil durante una revisión en taller mecánico"
               style="object-position:68% 50%;"
               loading="lazy" decoding="async">
             <div class="amb-overlay">
-              <div class="amb-icon-wrap"
-                   style="background:rgba(224,48,60,0.16); border-color:rgba(255,110,120,0.45);"
-                   aria-hidden="true">
-                <i class="fa-solid fa-wrench" style="color:#ff8a92;"></i>
+              <div class="amb-icon-wrap is-red" aria-hidden="true">
+                <i class="fa-solid fa-circle-stop"></i>
               </div>
-              <h3>Frenos, A/C y Mecánica General</h3>
-              <p>Frenos seguros, aire acondicionado que sí enfría y mantenimiento en general para que tu auto responda como el primer día.</p>
-              <div class="amb-temp">Frenos · Aire acondicionado · Mantenimiento</div>
+              <h3>Frenos</h3>
+              <p>Revisión y reparación del sistema de frenos para que tu auto responda con seguridad.</p>
+              <div class="amb-temp">Revisión · Reparación</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar frenos por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20Frenos.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
             </div>
-          </div>
+          </article>
+
+          <!-- 05 · Afinaciones de motor y transmisión -->
+          <article class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1663642775693-6628f65358be?q=75&w=900&auto=format&fit=crop"
+              alt="Motor de automóvil en detalle con alternador y bandas, en revisión para afinación"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap is-white" aria-hidden="true">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <h3>Afinaciones de motor y transmisión</h3>
+              <p>Mantenimiento completo del motor y la transmisión para que tu auto rinda parejo.</p>
+              <div class="amb-temp">Motor · Transmisión</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar afinaciones de motor y transmisión por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20Afinaci%C3%B3n%20de%20motor%20y%20transmisi%C3%B3n.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 06 · Lavado de inyectores -->
+          <article class="amb-card reveal d1">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1759148413911-5ded7ed2ec06?q=75&w=900&auto=format&fit=crop"
+              alt="Sistema de inyección de combustible con tubos de vidrio en un banco de pruebas"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <h3>Lavado de inyectores</h3>
+              <p>Limpieza en laboratorio profesional para recuperar un funcionamiento suave y parejo.</p>
+              <div class="amb-temp">Laboratorio profesional</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar lavado de inyectores por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20Lavado%20de%20inyectores%20en%20laboratorio%20profesional.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 07 · Rectificación de motores -->
+          <article class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1638983851342-63e1aa939a7a?q=75&w=900&auto=format&fit=crop"
+              alt="Bielas, pistones y piezas metálicas de un motor desarmado"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-ruler-combined"></i>
+              </div>
+              <h3>Rectificación de motores</h3>
+              <p>Rectificamos tu motor para devolverle la potencia y el buen desempeño.</p>
+              <div class="amb-temp">Motor · Potencia</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar rectificación de motores por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20Rectificaci%C3%B3n%20de%20motores.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 08 · Mecánica en general -->
+          <article class="amb-card reveal d3">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?q=75&w=900&auto=format&fit=crop"
+              alt="Mecánico revisando el motor de un automóvil con el cofre abierto"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h3>Mecánica en general</h3>
+              <p>Mantenimiento y reparaciones para que tu auto responda como el primer día.</p>
+              <div class="amb-temp">Mantenimiento · Reparación</div>
+              <a class="amb-cta" target="_blank" rel="noopener noreferrer"
+                 aria-label="Cotizar mecánica en general por WhatsApp"
+                 href="https://wa.me/523221467240?text=Hola%2C%20quiero%20cotizar%3A%20Mec%C3%A1nica%20en%20general.">
+                Cotizar por WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
 
         </div>
+
       </div>
     </section>
 
@@ -557,7 +678,7 @@
             <div class="stat-lbl">Años-modelo atendidos<br>(2014 – 2026)</div>
           </div>
 
-          <!-- Especialidades del taller (ver lista de servicios) -->
+          <!-- Especialidades del taller = número de tarjetas de servicios (#ambientes). Actualizar si cambia. -->
           <div class="stat-cell" role="listitem">
             <div class="stat-num"
                  data-count="8" data-suffix=""

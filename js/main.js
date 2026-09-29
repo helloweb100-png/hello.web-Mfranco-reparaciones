@@ -97,7 +97,7 @@
       'Diagnóstico Preciso', 'Atención Rápida', 'Precios Justos',
       'Garantía en Cada Servicio', 'Comunicación entre Módulos', 'Check Engine',
       'Aire Acondicionado', 'Frenos', 'Afinación de Motor y Transmisión',
-      'Lavado de Inyectores', 'Rectificación de Motores', 'Autos 2014 – 2026',
+      'Lavado de Inyectores', 'Rectificación de Motores', 'Mecánica en General', 'Autos 2014 – 2026',
       'Puerto Vallarta, Jalisco'
     ];
     const full = [...items, ...items, ...items, ...items];

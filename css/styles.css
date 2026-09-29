@@ -691,20 +691,21 @@ a.ambiente-pill:hover {
   background: rgba(212,169,74,0.06);
 }
 
+/* 8 servicios: 1 columna (móvil) → 2 (tablet) → 4 (escritorio, 2 filas de 4) */
 .ambientes-grid {
   display: grid; grid-template-columns: 1fr;
   gap: 18px;
 }
-@media (min-width: 768px) {
-  .ambientes-grid { grid-template-columns: repeat(3, 1fr); }
-}
+@media (min-width: 620px)  { .ambientes-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .ambientes-grid { grid-template-columns: repeat(4, 1fr); } }
 
 .amb-card {
   position: relative; border-radius: var(--radius);
-  overflow: hidden; cursor: default;
+  overflow: hidden; cursor: pointer;
   aspect-ratio: 3/4;
 }
-@media (min-width: 768px) { .amb-card { aspect-ratio: 3/5; } }
+@media (min-width: 620px)  { .amb-card { aspect-ratio: 4/5; } }
+@media (min-width: 1100px) { .amb-card { aspect-ratio: 3/4.6; } }
 
 .amb-img {
   width: 100%; height: 100%; object-fit: cover;
@@ -716,27 +717,47 @@ a.ambiente-pill:hover {
 
 .amb-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.3) 55%, transparent 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.86) 42%, rgba(0,0,0,0.35) 70%, transparent 100%);
   display: flex; flex-direction: column; justify-content: flex-end;
   padding: 30px 26px; z-index: 2;
 }
 
+/* Icono: dorado por defecto; variantes de color para frenos (rojo), motor (blanco) y A/C (frío) */
 .amb-icon-wrap {
   width: 44px; height: 44px; border-radius: 50%;
-  backdrop-filter: blur(12px); border: 1px solid;
+  backdrop-filter: blur(12px); border: 1px solid rgba(243,220,155,0.45);
+  background: rgba(212,169,74,0.16); color: var(--gold-light);
   display: flex; align-items: center; justify-content: center;
   font-size: 17px; margin-bottom: 16px;
   transition: transform 0.4s var(--ease);
 }
+.amb-icon-wrap.is-red   { background: rgba(224,48,60,0.16);   border-color: rgba(255,110,120,0.45); color: #ff8a92; }
+.amb-icon-wrap.is-white { background: rgba(255,255,255,0.1);  border-color: rgba(255,255,255,0.3);  color: var(--white); }
+.amb-icon-wrap.is-cool  { background: rgba(120,190,255,0.14); border-color: rgba(160,210,255,0.4);  color: #a9d6ff; }
 .amb-card:hover .amb-icon-wrap { transform: scale(1.1); }
 
 .amb-card h3 {
   font-family: var(--font-display);
-  font-size: 30px; font-weight: 800; line-height: 1.02;
+  font-size: 28px; font-weight: 800; line-height: 1.02;
   letter-spacing: 0.01em; text-transform: uppercase; margin-bottom: 8px;
 }
-.amb-card p  { font-size: 13.5px; color: rgba(255,255,255,0.65); line-height: 1.6; }
+@media (min-width: 1100px) { .amb-card h3 { font-size: 25px; } }
+.amb-card p  { font-size: 13.5px; color: rgba(255,255,255,0.7); line-height: 1.6; }
 .amb-temp    { font-size: 11px; font-weight: 700; color: var(--gold); margin-top: 12px; letter-spacing: 0.1em; }
+
+/* Enlace a WhatsApp: el ::after lo estira sobre toda la tarjeta (toda la tarjeta es clicable) */
+.amb-cta {
+  margin-top: 16px;
+  display: inline-flex; align-items: center; gap: 8px; align-self: flex-start;
+  font-size: 12.5px; font-weight: 700; letter-spacing: 0.02em;
+  color: var(--white); text-decoration: none;
+  transition: color 0.3s ease;
+}
+.amb-cta::after { content: ''; position: absolute; inset: 0; }
+.amb-cta i { font-size: 11px; color: var(--gold); transition: transform 0.35s var(--ease); }
+.amb-card:hover .amb-cta { color: var(--gold-light); }
+.amb-card:hover .amb-cta i { transform: translateX(4px); }
+.amb-cta:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 4px; }
 
 /* ============================================================
    SECTION: PROCESO
