@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ══════════════════════════════════════════════════════
+       SEO
+       El nombre y la ciudad coinciden EXACTAMENTE con la ficha de Google Maps
+       ("Taller automotriz integral MFranco · Puerto Vallarta, Jalisco, México").
+       Mantener esa coherencia (nombre + teléfono + ciudad) ayuda al posicionamiento local.
+  ══════════════════════════════════════════════════════ -->
+  <title>Taller Automotriz Integral MFranco | Mecánico en Puerto Vallarta</title>
+  <meta name="description" content="Taller mecánico en Puerto Vallarta especialista en autos 2014–2026: diagnóstico electrónico, check engine, frenos, A/C y afinaciones. Cotiza por WhatsApp.">
+  <meta name="keywords" content="taller mecánico Puerto Vallarta, taller automotriz Puerto Vallarta, mecánico Puerto Vallarta, diagnóstico automotriz, escáner automotriz, check engine, pérdida de comunicación módulos, aire acondicionado automotriz, frenos, afinación de motor, transmisiones, lavado de inyectores, rectificación de motores, MFranco">
+  <meta name="author" content="Taller Automotriz Integral MFranco">
+  <meta name="theme-color" content="#09090a">
+  <meta name="geo.region" content="MX-JAL">
+  <meta name="geo.placename" content="Puerto Vallarta">
+
+  <!-- Open Graph (vista previa al compartir en WhatsApp / Facebook).
+       TODO al publicar: cambiar og:image por la URL ABSOLUTA del logo (https://tudominio.com/logo.png) y agregar <link rel="canonical"> -->
+  <meta property="og:title" content="Taller Automotriz Integral MFranco | Mecánico en Puerto Vallarta">
+  <meta property="og:description" content="Diagnóstico preciso, atención rápida, precios justos y garantía en cada servicio. Autos 2014–2026 en Puerto Vallarta, Jalisco.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Taller Automotriz Integral MFranco">
+  <meta property="og:image" content="logo.png">
+
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Datos estructurados (Google): negocio local de reparación automotriz.
+       No se incluyen calificaciones ni horarios porque no se cuenta con datos verificados. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Taller Automotriz Integral MFranco",
+    "alternateName": "MFranco",
+    "description": "Taller mecánico en Puerto Vallarta especializado en vehículos modelo 2014 a 2026: diagnóstico electrónico, fallas de comunicación entre módulos, check engine, frenos, aire acondicionado, afinaciones, transmisiones, lavado de inyectores y rectificación de motores.",
+    "telephone": "+523221467240",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Puerto Vallarta",
+      "addressRegion": "Jalisco",
+      "addressCountry": "MX"
+    },
+    "areaServed": { "@type": "City", "name": "Puerto Vallarta" },
+    "sameAs": ["https://www.instagram.com/lmf20222050/"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios automotrices",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico electrónico y fallas de comunicación entre módulos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico de check engine" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de aire acondicionado automotriz" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de frenos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Afinación de motores y transmisiones" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lavado de inyectores en laboratorio profesional" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rectificación de motores" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mecánica automotriz en general" } }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Precarga de la imagen hero (mejora el LCP) -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop">
+
+  <!-- Fonts: Barlow Condensed (títulos) + Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NOTA DE MANTENIMIENTO
+       WhatsApp del cliente: 52 322 146 7240 → https://wa.me/523221467240
+       Aparece en: botón del navbar, menú móvil, CTA del hero, botón "¿No sabes qué falla tiene?",
+       bloque de contacto, footer, botón flotante y en js/main.js (formulario). -->
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="logo.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Taller Automotriz Integral MFranco — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img src="logo.png" alt="" width="58" height="58">
+          </div>
+          <div class="nav-logo-copy">
+            <span>MFranco</span>
+            <span>Taller Automotriz Integral</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué elegirnos</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#producto">Diagnóstico</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/523221467240?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20agendar%20un%20diagn%C3%B3stico%20para%20mi%20auto."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          <i class="fa-brands fa-whatsapp" style="font-size:16px;"></i>
+          Cotizar por WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué elegirnos</a>
+      <a href="#ambientes">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#producto">Diagnóstico</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/523221467240?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20agendar%20un%20diagn%C3%B3stico%20para%20mi%20auto."
+         target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) — foto definida en css/styles.css (--hero-img) -->
+      <div class="hero-bg" role="img"
+           aria-label="Manos de mecánico con llave trabajando sobre el motor de un automóvil"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge">
+            <div class="badge-dot"></div>
+            Taller Mecánico · Puerto Vallarta, Jalisco
+          </div>
+
+          <!-- Animated title (3 líneas: la animación depende de este orden) -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Tu auto</span></span>
+            <span class="line"><span>de vuelta</span></span>
+            <span class="line"><span class="accent">en marcha.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            <strong>Diagnóstico preciso</strong> para autos 2014 a 2026: fallas de comunicación, check engine, frenos y A/C. Atención rápida, <strong>precios justos y garantía</strong> en cada servicio.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/523221467240?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20agendar%20un%20diagn%C3%B3stico%20para%20mi%20auto."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              <i class="fa-brands fa-whatsapp" style="font-size:17px;"></i>
+              Agendar Diagnóstico
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-screwdriver-wrench" style="font-size:15px; color:var(--gray);"></i>
+              Ver Servicios
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Garantías del taller">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Garantía en cada servicio
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-bolt"></i>
+              Atención rápida
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Puerto Vallarta, Jal.
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE (textos definidos en js/main.js)
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              Cambiar piezas al azar sale caro…
+              <em> un diagnóstico preciso te ahorra tiempo y dinero.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            En los autos modernos los módulos «conversan» entre sí y un síntoma puede venir de otro sistema. Con visión global encontramos la causa real, no solo el síntoma.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3>Atención Rápida</h3>
+            <p>Soluciones ágiles para que sigas en marcha. Diagnosticamos y reparamos sin darte vueltas.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <h3>Servicio Profesional</h3>
+            <p>Experiencia y herramientas de calidad, con trato directo con el técnico que revisa tu auto.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3>Precios Justos</h3>
+            <p>Calidad que sí vale lo que pagas: solo lo que tu auto realmente necesita, sin cargos de más.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Garantía en Cada Servicio</h3>
+            <p>Respaldo total en cada reparación. Si trabajamos en tu auto, respondemos por el trabajo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Especialidades (3 tarjetas con foto)
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestros Servicios</div>
+            <h2 class="section-title" id="amb-heading">
+              Un solo taller para<br>
+              <span class="gold">todo lo que tu auto necesita</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Del diagnóstico electrónico a la rectificación de motor: soluciones para vehículos modelo 2014 a 2026 en Puerto Vallarta.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <a class="ambiente-pill"
+               href="https://wa.me/523221467240?text=Hola%2C%20mi%20auto%20tiene%20una%20falla%20y%20no%20s%C3%A9%20qu%C3%A9%20es.%20%C2%BFMe%20pueden%20ayudar%3F"
+               target="_blank" rel="noopener noreferrer">¿No sabes qué falla tiene? Pregúntanos →</a>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Diagnóstico electrónico -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1727893380169-4dda123e19f7?q=80&w=1400&auto=format&fit=crop"
+              alt="Técnico conectando una laptop de diagnóstico al sistema electrónico de un automóvil"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(212,169,74,0.16); border-color:rgba(243,220,155,0.45);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-microchip" style="color:#f3dc9b;"></i>
+              </div>
+              <h3>Diagnóstico Electrónico</h3>
+              <p>Pérdida de comunicación entre computadora y módulos, fallas de check engine y sensores. Encontramos la causa, no solo el síntoma.</p>
+              <div class="amb-temp">Escáner profesional · Modelos 2014 – 2026</div>
+            </div>
+          </div>
+
+          <!-- Motor, transmisión e inyectores -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1663642775693-6628f65358be?q=80&w=1400&auto=format&fit=crop"
+              alt="Motor de automóvil en detalle con alternador y bandas, en revisión para afinación o rectificación"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-gears" style="color:white;"></i>
+              </div>
+              <h3>Motor y Transmisión</h3>
+              <p>Afinaciones de motor y transmisión, lavado de inyectores en laboratorio profesional y rectificación: devolvemos la potencia a tu motor.</p>
+              <div class="amb-temp">Afinación · Inyectores · Rectificación</div>
+            </div>
+          </div>
+
+          <!-- Frenos, A/C y mecánica general -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1613214150384-14921ff659b2?q=80&w=1400&auto=format&fit=crop"
+              alt="Disco y caliper de freno de un automóvil durante una revisión en taller mecánico"
+              style="object-position:68% 50%;"
+              loading="lazy" decoding="async">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(224,48,60,0.16); border-color:rgba(255,110,120,0.45);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-wrench" style="color:#ff8a92;"></i>
+              </div>
+              <h3>Frenos, A/C y Mecánica General</h3>
+              <p>Frenos seguros, aire acondicionado que sí enfría y mantenimiento en general para que tu auto responda como el primer día.</p>
+              <div class="amb-temp">Frenos · Aire acondicionado · Mantenimiento</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Del diagnóstico a la garantía, <span class="gold">sin vueltas</span>
+          </h2>
+          <p>Tres pasos claros para que sepas qué tiene tu auto, cuánto cuesta y cuándo vuelve a estar en marcha.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Diagnóstico Preciso</h3>
+            <p>Conectamos el escáner profesional, leemos los módulos de tu auto y encontramos la causa real de la falla.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Presupuesto Claro</h3>
+            <p>Te explicamos qué encontramos, qué conviene reparar primero y cuánto cuesta. Tú decides.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Reparación con Garantía</h3>
+            <p>Reparamos con herramientas de calidad y te entregamos tu auto en marcha, con respaldo total en cada servicio.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO ESTRELLA — Diagnóstico electrónico
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal producto-info">
+            <div class="label">Servicio Estrella</div>
+            <h2 class="section-title" id="prod-heading">
+              Diagnóstico electrónico<br>
+              <span class="gold">que sí da con la falla</span>
+            </h2>
+            <p class="producto-lead">
+              Un auto moderno es una red de módulos conectados por CAN Bus. Cuando uno falla, el síntoma aparece en otro lado. Con escáner profesional y visión global evitamos cambiar piezas que no lo necesitaban.
+            </p>
+
+            <ul class="feature-rows" aria-label="Qué resolvemos con el diagnóstico electrónico">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-network-wired"></i></div>
+                <div>
+                  <h4>Pérdida de comunicación entre módulos</h4>
+                  <p>Detectamos y corregimos fallas de comunicación entre la computadora y los módulos de tu auto.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                  <h4>Fallas de Check Engine</h4>
+                  <p>Leemos códigos y verificamos sensores para apagar la luz atendiendo la causa correcta.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-droplet"></i></div>
+                <div>
+                  <h4>Lavado de inyectores en laboratorio</h4>
+                  <p>Limpieza profesional para recuperar un funcionamiento suave y parejo del motor.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-gears"></i></div>
+                <div>
+                  <h4>Afinaciones de motor y transmisión</h4>
+                  <p>Mantenimiento completo para que tu auto rinda parejo, kilómetro tras kilómetro.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Alcance del servicio de diagnóstico">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">2014+</span>
+                <span class="spec-name">Modelos</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">CAN Bus</span>
+                <span class="spec-name">Módulos</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">ABS/ESC</span>
+                <span class="spec-name">Frenado</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">SAS</span>
+                <span class="spec-name">Dirección</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body">
+                <img src="https://images.unsplash.com/photo-1632733711679-529326f6db12?q=80&w=1200&auto=format&fit=crop"
+                     alt="Mecánico revisando la caja de fusibles y módulos electrónicos de un vehículo moderno"
+                     loading="lazy" decoding="async">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Escáner profesional
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-car-side" style="color:var(--gold);"></i>
+                Autos 2014 – 2026
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS — Solo datos verificables (ver notas)
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos clave del taller">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <!-- Seguidores de la página de Facebook del taller (1.3 mil). Actualizar si cambia. -->
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="1300" data-prefix="+"
+                 aria-label="Más de 1,300 seguidores">0</div>
+            <div class="stat-lbl">Seguidores en<br>Facebook</div>
+          </div>
+
+          <!-- Promesa de la marca: "Garantía en cada servicio" -->
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100 por ciento">0</div>
+            <div class="stat-lbl">Servicios con<br>garantía</div>
+          </div>
+
+          <!-- Rango de modelos atendidos: 2014 a 2026 = 13 años-modelo -->
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="13" data-suffix=""
+                 aria-label="13 años modelo">0</div>
+            <div class="stat-lbl">Años-modelo atendidos<br>(2014 – 2026)</div>
+          </div>
+
+          <!-- Especialidades del taller (ver lista de servicios) -->
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="8" data-suffix=""
+                 aria-label="8 especialidades">0</div>
+            <div class="stat-lbl">Especialidades<br>mecánicas</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES → Síntomas / señales de alerta
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Señales de alerta</div>
+          <h2 class="section-title" id="sec-heading">
+            ¿Tu auto te está <span class="gold">avisando algo?</span>
+          </h2>
+          <p>Si reconoces alguno de estos síntomas, no esperes a que se vuelva una reparación mayor. Cuéntanos por WhatsApp y te orientamos.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-triangle-exclamation sector-icon" aria-hidden="true"></i>
+            <h3>Check Engine encendido</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-network-wired sector-icon" aria-hidden="true"></i>
+            <h3>Pérdida de comunicación</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-circle-stop sector-icon" aria-hidden="true"></i>
+            <h3>Frenos con fallas</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-snowflake sector-icon" aria-hidden="true"></i>
+            <h3>Aire que no enfría</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-gauge-high sector-icon" aria-hidden="true"></i>
+            <h3>Falta de potencia</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu auto</span>
+          </h2>
+          <p>Cuéntanos qué le pasa y agenda tu diagnóstico. Te respondemos por WhatsApp lo antes posible.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Habla directo con el técnico</h3>
+            <p class="ci-sub">Taller automotriz integral en Puerto Vallarta, Jalisco.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Taller Automotriz Integral MFranco<br>
+                     Puerto Vallarta, Jalisco, México.</p>
+                  <!-- TODO: si el cliente confirma calle y colonia, agregarlas aquí y en el JSON-LD del <head> -->
+                  <a href="https://www.google.com/maps/search/?api=1&query=Taller+automotriz+integral+MFranco+Puerto+Vallarta+Jalisco+M%C3%A9xico"
+                     target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Ver en Google Maps →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:+523221467240">322 146 7240</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y agenda tu diagnóstico en minutos.</p>
+                  <a href="https://wa.me/523221467240?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20agendar%20un%20diagn%C3%B3stico%20para%20mi%20auto."
+                     target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicita tu Diagnóstico</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Juan Pérez" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Diagnóstico general</option>
+                    <option>Pérdida de comunicación entre módulos</option>
+                    <option>Check Engine encendido</option>
+                    <option>Aire acondicionado</option>
+                    <option>Frenos</option>
+                    <option>Afinación de motor</option>
+                    <option>Transmisión</option>
+                    <option>Lavado de inyectores</option>
+                    <option>Rectificación de motor</option>
+                    <option>Mecánica en general</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos qué le pasa a tu auto</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Marca, modelo y año de tu auto, y qué síntoma presenta…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Agendar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación con el taller.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Logotipo Taller Automotriz Integral MFranco" width="46" height="46" loading="lazy">
+          <span>MFranco.</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Taller Automotriz Integral MFranco. Todos los derechos reservados. Puerto Vallarta, Jalisco.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/lmf20222050/"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Instagram de MFranco">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- TODO: agregar Facebook y TikTok cuando el cliente pase los enlaces exactos (ya tiene ambas cuentas):
+               <a href="URL_FACEBOOK" ... class="footer-soc" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="URL_TIKTOK"   ... class="footer-soc" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a> -->
+          <a href="https://wa.me/523221467240" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/523221467240?text=Hola%2C%20vi%20su%20sitio%20web%20y%20quiero%20agendar%20un%20diagn%C3%B3stico%20para%20mi%20auto."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar a MFranco por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
